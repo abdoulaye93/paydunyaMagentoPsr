@@ -1,5 +1,5 @@
 {
-  "name": "master/paydunyaMagentoPsr",
+  "name": "master/magentoPsr-module",
   "version": "1.0.0",
   "type": "magento2-module",
   "description": "PayDunya Magento Payment Gateway",
