@@ -8,7 +8,7 @@
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="paydunya_config_provider" xsi:type="object">PaydunyaPsrMagento\PaydunyaPsr\Model\Ui\ConfigProvider</item>
+                <item name="paydunya_config_provider" xsi:type="object">Paydunya\PaydunyaMagento\Model\Ui\ConfigProvider</item>
             </argument>
         </arguments>
     </type>

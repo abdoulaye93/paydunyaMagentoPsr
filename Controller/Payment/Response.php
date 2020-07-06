@@ -3,10 +3,10 @@
  * Copyright © 2019 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace PaydunyaPsrMagento\PaydunyaPsr\Controller\Payment;
-use PaydunyaPsrMagento\PaydunyaPsr\Helper\Data;
+namespace Paydunya\PaydunyaMagento\Controller\Payment;
+use Paydunya\PaydunyaMagento\Helper\Data;
 
-
+ 
 /**
  * Response Payment Controller
  *
@@ -27,13 +27,13 @@ class Response extends \Magento\Framework\App\Action\Action
 
         parent::__construct($context);
     }
-
+    
     public function execute()
     {
         $invoiceToken = $_GET['token'];
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
-        $storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
-
+	    $storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+        
         $invoice = new \Paydunya\Checkout\CheckoutInvoice();
         if($invoiceToken && $invoice->confirm($invoiceToken)) {
             $orderId = $invoice->getCustomData("order_id");

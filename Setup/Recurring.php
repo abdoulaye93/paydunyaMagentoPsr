@@ -1,11 +1,11 @@
 <?php
-namespace PaydunyaPsrMagento\PaydunyaPsr\Setup;
+namespace Paydunya\PaydunyaMagento\Setup;
 
 use Magento\Framework\Setup\InstallSchemaInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\SchemaSetupInterface;
 
-class Recurring implements InstallSchemaInterface
+class Recurring implements InstallSchemaInterface 
 {
     public function install(SchemaSetupInterface $setup, ModuleContextInterface $context)
     {

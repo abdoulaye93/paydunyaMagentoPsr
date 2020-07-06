@@ -3,7 +3,7 @@
  * Copyright © 2019 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace PaydunyaPsrMagento\PaydunyaPsr\Block;
+namespace Paydunya\PaydunyaMagento\Block;
 
 class PaydunyaMagento extends \Magento\Framework\View\Element\Template
 {
@@ -17,7 +17,7 @@ class PaydunyaMagento extends \Magento\Framework\View\Element\Template
         \Magento\Sales\Model\Order $salesOrderFactory,
         \Magento\Checkout\Model\Session $checkoutSession,
         \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig,
-        \Magento\Catalog\Model\Session $catalogSession,
+        \Magento\Catalog\Model\Session $catalogSession, 
         array $data = []
     ) {
         $this->checkoutSession = $checkoutSession;
@@ -35,14 +35,14 @@ class PaydunyaMagento extends \Magento\Framework\View\Element\Template
     }
 
     /**
-     * Retrieve current order
-     *
-     * @return \Magento\Sales\Model\Order
-     */
+    * Retrieve current order
+    *
+    * @return \Magento\Sales\Model\Order
+    */
     public function getOrder()
     {
-        $orderId = $this->checkoutSession->getLastOrderId();
-        $order = $this->salesOrderFactory->load($orderId);
-        return $order->getData(); // you can access various order details from here.
+       $orderId = $this->checkoutSession->getLastOrderId();
+       $order = $this->salesOrderFactory->load($orderId);
+       return $order->getData(); // you can access various order details from here. 
     }
 }

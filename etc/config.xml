@@ -14,7 +14,7 @@
                 <description>Paiement sécurisé via PayDunya</description>
                 <sandbox>1</sandbox>
                 <order_status>pending_payment</order_status>
-                <payment_action>true</payment_action>
+				<payment_action>true</payment_action>
                 <model>Paydunya\PaydunyaMagento\Model\Paydunya</model>
                 <group>offline</group>
             </paydunya>

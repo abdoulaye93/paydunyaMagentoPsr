@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace PaydunyaPsrMagento\PaydunyaPsr\Model\Ui;
+namespace Paydunya\PaydunyaMagento\Model\Ui;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 

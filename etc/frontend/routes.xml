@@ -5,9 +5,9 @@
 */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="standard">
-        <route id="PaydunyaPsrMagento" frontName="gateway">
-            <module name="PaydunyaPsrMagento_PaydunyaPsr" />
-        </route>
-    </router>
+  <router id="standard">
+    <route id="paydunyamagento" frontName="paydunyamagento">
+        <module name="Paydunya_PaydunyaMagento" />
+    </route>
+</router>
 </config>
